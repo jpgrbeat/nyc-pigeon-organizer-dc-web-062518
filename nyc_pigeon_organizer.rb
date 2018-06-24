@@ -3,7 +3,13 @@ def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_hash = {}
   data.each_with_object({}) do |(key, h), result|
-    binding.pry
+    h.each do |value, names|
+      names.each do |name|
+        result[name] ||= {} 
+        result[name][key] ||= []
+        binding.pry
+    end
+  end
   # data.each do |key, hash|
   #   keys = hash.values.flatten.uniq
   #   hash.each do |type, arr|
