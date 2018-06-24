@@ -9,7 +9,9 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  # data.each do |key, hash|
+end
+
+# data.each do |key, hash|
   #   keys = hash.values.flatten.uniq
   #   hash.each do |type, arr|
   #     keys.each do |pigeon|
@@ -28,6 +30,3 @@ def nyc_pigeon_organizer(data)
   #       end
   #     end
   #   end
-  end
-  pigeon_hash
-end
