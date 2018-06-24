@@ -11,8 +11,8 @@ def nyc_pigeon_organizer(data)
          if arr.include?(pigeon)
           #binding.pry
           if pigeon_hash.has_key?(pigeon)
-            
-            pigeon_hash[pigeon][key] = type_arr << type.to_s
+            type_arr << type.to_s
+            pigeon_hash[pigeon][key] = type_arr
             binding.pry
           else 
             type_arr << type.to_s
