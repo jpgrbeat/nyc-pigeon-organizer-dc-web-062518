@@ -4,7 +4,6 @@ def nyc_pigeon_organizer(data)
   pigeon_hash = {}
   data.each_with_object({}) do |(key, h), result|
     binding.pry
-  end
   # data.each do |key, hash|
   #   keys = hash.values.flatten.uniq
   #   hash.each do |type, arr|
