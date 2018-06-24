@@ -7,7 +7,10 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         result[name] ||= {} 
         result[name][key] ||= []
+        result[name[key] << value.to_s 
+        
         binding.pry
+      end
     end
   end
   # data.each do |key, hash|
